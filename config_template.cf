@@ -1,0 +1,11 @@
+[meterID]
+00000000000000001
+
+[memberID]
+00001
+
+[settlement_point]
+LZ_NORTH
+
+[api_url]
+https://app.gogriddy.com/api/v1/insights/getnow
