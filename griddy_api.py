@@ -2,9 +2,7 @@
 
 import os
 import ConfigParser
-import json
-import urllib2
-import requests
+import requests, json
 
 dir_name = os.path.dirname(os.path.realpath(__file__))
 conf = dir_name + '/config.cf'
@@ -17,8 +15,8 @@ memberID = config.get('default', 'memberID')
 settlement_point = config.get('default', 'settlement_point')
 api_url = config.get('default', 'api_url')
 
-data = {'meterID': meterID, 'memberID': memberID, 'settlement_point': settlement_point}
-r = requests.post(api_url, data=json.dumps(data))
+payload = {'meterID': meterID, 'memberID': memberID, 'settlement_point': settlement_point}
+r = requests.post(api_url, data=json.dumps(payload))
 
 #print "response code=", r
 #print r.text
