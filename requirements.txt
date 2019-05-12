@@ -2,3 +2,4 @@ ConfigParser
 json
 os
 requests
+influxdb
