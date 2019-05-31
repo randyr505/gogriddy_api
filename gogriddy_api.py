@@ -45,5 +45,5 @@ influxdb_entry = (
       future_value_score=j["forecast"][0]["value_score"])
 
 #print "INSERT", influxdb_entry
-#client.write_points(influxdb_entry, protocol=influxdb_protocol)
-print j["now"]["price_ckwh"],j["now"]["price_display_sign"], "per kwh"
+client.write_points(influxdb_entry, protocol=influxdb_protocol)
+#print j["now"]["price_ckwh"],j["now"]["price_display_sign"], "per kwh"
