@@ -16,4 +16,4 @@ If you are using influxdb then make sure to uncomment the line that adds it to y
 http://bit.ly/gogriddy
 
 # Graph Of My Actual Usage
-![alt text](http://bit.ly/gogriddy_graph_gh)
+![Screenshot](graph.png)
