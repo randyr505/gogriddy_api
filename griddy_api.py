@@ -4,7 +4,9 @@ import os
 import ConfigParser
 import requests, json
 from influxdb import InfluxDBClient
+import time
 
+time.sleep( 5 )
 dir_name = os.path.dirname(os.path.realpath(__file__))
 conf = dir_name + '/config.cf'
 
