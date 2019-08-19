@@ -1,4 +1,4 @@
-# gogriddy_api
+# griddy_api
 
 # Setup config
 ```cp config_template.cfg to config.cfg```
@@ -10,7 +10,7 @@ If you are using influxdb then make sure to uncomment the line that adds it to y
 ```client.write_points(influxdb_entry, protocol=influxdb_protocol)```
 
 # crontab entry
-```0,5,10,15,20,25,30,35,40,45,50,55 * * * * /Users/username/bin/gogriddy_api.py```
+```0,5,10,15,20,25,30,35,40,45,50,55 * * * * /Users/username/bin/griddy_api.py```
 
 # Referral Link
 http://bit.ly/GoGriddy
